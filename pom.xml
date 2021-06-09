@@ -1,84 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.example</groupId>
+    <artifactId>demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>demo</name>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 
-		<!--JUnit5 -->
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter</artifactId>
-			<version>5.7.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-runner</artifactId>
-			<version>1.7.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-launcher</artifactId>
-			<version>1.7.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-console-standalone</artifactId>
-			<version>1.7.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-junit5</artifactId>
-			<version>2.13.2</version>
-			<scope>test</scope>
-		</dependency>
+        <!--JUnit5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>1.7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-console-standalone</artifactId>
+            <version>1.7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>2.13.2</version>
+            <scope>test</scope>
+        </dependency>
 
-		<!-- mock server -->
-		<dependency>
-			<groupId>com.github.tomakehurst</groupId>
-			<artifactId>wiremock-jre8</artifactId>
-			<version>2.28.0</version>
-			<scope>test</scope>
-		</dependency>
+        <!-- mock server -->
+        <dependency>
+            <groupId>com.github.tomakehurst</groupId>
+            <artifactId>wiremock-jre8</artifactId>
+            <version>2.28.0</version>
+            <scope>test</scope>
+        </dependency>
 
 
+    </dependencies>
 
-	</dependencies>
-
-	<build>
-		<plugins>
-			<!--spring-boot-maven-plugin需要加上version，version版本与spring-boot-starter-parent一致，否则可能spring boot项目有时可能识别不了-->
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>2.4.5</version>
-			</plugin>
-		</plugins>
-	</build>
+    <build>
+        <plugins>
+            <!--spring-boot-maven-plugin需要加上version，version版本与spring-boot-starter-parent一致，否则可能spring boot项目有时可能识别不了-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.4.5</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
+
+
